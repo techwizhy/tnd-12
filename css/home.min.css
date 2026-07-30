@@ -427,13 +427,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  font-family: 'DM Sans', system-ui, sans-serif;
-  line-height: 1.45;
+  font-family: 'Merriweather', Georgia, serif !important;
+  line-height: 1.5;
 }
 
 .hero-manifesto-text .manifesto-line {
-  font-size: clamp(1.05rem, 1.35vw, 1.22rem);
-  font-weight: 500;
+  font-family: 'Merriweather', Georgia, serif !important;
+  font-size: clamp(1.02rem, 1.3vw, 1.18rem);
+  font-weight: 700;
   color: #1e293b;
   margin: 0;
   letter-spacing: -0.01em;
@@ -446,16 +447,16 @@ body {
 
 .hero-manifesto-text .manifesto-brand {
   font-weight: 700;
-  color: #C89B3C;
+  color: #0F3A34;
 }
 
 /* Dark Theme Overrides for Manifesto Text */
 .dark-theme .hero-manifesto-text .manifesto-line {
-  color: #cbd5e1;
+  color: #ffffff;
 }
 
 .dark-theme .hero-manifesto-text .manifesto-highlight {
-  color: #ffffff;
+  color: #D4A437;
 }
 
 .dark-theme .hero-manifesto-text .manifesto-brand {
