@@ -981,10 +981,57 @@ html.dark-theme .menu-toggle .bar {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .footer-meta-links {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+
+  .footer-main-columns {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-bottom: 40px !important;
+  }
+
+  .footer-col-journey,
+  .footer-col-contact,
+  .footer-flag-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .footer-journey-box,
+  .footer-flag-card-inner,
+  .footer-contact-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: auto !important;
+    min-height: 220px !important;
+    padding: 30px 24px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-wrapper {
+    padding: 40px 16px 24px !important;
+  }
+
+  .footer-journey-box,
+  .footer-flag-card-inner,
+  .footer-contact-box {
+    padding: 24px 18px !important;
+    min-height: 200px !important;
+  }
+
+  .footer-journey-box h3,
+  .footer-contact-box h3 {
+    font-size: 1.3rem !important;
   }
 }
