@@ -421,6 +421,47 @@ body {
   gap: 1.1rem;
 }
 
+/* ── HERO MANIFESTO STATEMENT BLOCK ── */
+.hero-manifesto-text {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  line-height: 1.45;
+}
+
+.hero-manifesto-text .manifesto-line {
+  font-size: clamp(1.05rem, 1.35vw, 1.22rem);
+  font-weight: 500;
+  color: #1e293b;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.hero-manifesto-text .manifesto-highlight {
+  font-weight: 700;
+  color: #0F3A34;
+}
+
+.hero-manifesto-text .manifesto-brand {
+  font-weight: 700;
+  color: #C89B3C;
+}
+
+/* Dark Theme Overrides for Manifesto Text */
+.dark-theme .hero-manifesto-text .manifesto-line {
+  color: #cbd5e1;
+}
+
+.dark-theme .hero-manifesto-text .manifesto-highlight {
+  color: #ffffff;
+}
+
+.dark-theme .hero-manifesto-text .manifesto-brand {
+  color: #D4A437;
+}
+
 .matrix-group {
   display: flex;
   flex-direction: column;
