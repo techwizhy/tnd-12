@@ -456,11 +456,11 @@ body {
 }
 
 .dark-theme .hero-manifesto-text .manifesto-highlight {
-  color: #D4A437;
+  color: #f2c94c;
 }
 
 .dark-theme .hero-manifesto-text .manifesto-brand {
-  color: #D4A437;
+  color: #f2c94c;
 }
 
 .matrix-group {
@@ -2364,12 +2364,12 @@ body {
 }
 #panel-session3.lazy-loaded::before {
   background-image: -webkit-image-set(
-    url('../images/session3_bg.avif') type('image/avif'),
-    url('../images/session3_bg.webp') type('image/webp')
+    url('../images/session5_bg.avif') type('image/avif'),
+    url('../images/session5_bg.webp') type('image/webp')
   );
   background-image: image-set(
-    url('../images/session3_bg.avif') type('image/avif'),
-    url('../images/session3_bg.webp') type('image/webp')
+    url('../images/session5_bg.avif') type('image/avif'),
+    url('../images/session5_bg.webp') type('image/webp')
   );
 }
 #panel-session4.lazy-loaded::before {
@@ -2384,12 +2384,12 @@ body {
 }
 #panel-session5.lazy-loaded::before {
   background-image: -webkit-image-set(
-    url('../images/session5_bg.avif') type('image/avif'),
-    url('../images/session5_bg.webp') type('image/webp')
+    url('../images/session3_bg.avif') type('image/avif'),
+    url('../images/session3_bg.webp') type('image/webp')
   );
   background-image: image-set(
-    url('../images/session5_bg.avif') type('image/avif'),
-    url('../images/session5_bg.webp') type('image/webp')
+    url('../images/session3_bg.avif') type('image/avif'),
+    url('../images/session3_bg.webp') type('image/webp')
   );
 }
 
