@@ -442,11 +442,13 @@ body {
 
 .hero-manifesto-text .manifesto-highlight {
   font-weight: 700;
+  font-style: italic;
   color: #0F3A34;
 }
 
 .hero-manifesto-text .manifesto-brand {
   font-weight: 700;
+  font-style: italic;
   color: #0F3A34;
 }
 
@@ -455,12 +457,10 @@ body {
   color: #ffffff;
 }
 
-.dark-theme .hero-manifesto-text .manifesto-highlight {
-  color: #f2c94c;
-}
-
+.dark-theme .hero-manifesto-text .manifesto-highlight,
 .dark-theme .hero-manifesto-text .manifesto-brand {
-  color: #f2c94c;
+  color: #F7C839 !important;
+  font-weight: 700;
 }
 
 .matrix-group {
