@@ -884,7 +884,9 @@ body {
   position: relative;
   z-index: 2;
   width: 100%;
-  margin-left: 12px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
   margin-top: 0;
 }
 .hero-visual.show { opacity: 1; transform: translateY(0); }
@@ -893,6 +895,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 650px;
+  box-sizing: border-box;
   aspect-ratio: 16/10;
 }
 
@@ -1169,8 +1172,8 @@ body {
   height: 70px;
 }
 
-/* Responsive Overrides for Redesigned Hero */
-@media (max-width: 900px) {
+/* Responsive Overrides for Redesigned Hero (iPad Pro, Surface Pro, Nest Hub, Nest Hub Max, Mobile) */
+@media (max-width: 1280px) {
   /* Reduce visibility of particles in light theme on mobile to protect text contrast */
   #webgl-canvas {
     opacity: 0.28;
@@ -1180,10 +1183,15 @@ body {
     opacity: 0.85;
   }
 
+  .hero {
+    min-height: auto !important;
+    padding-bottom: 90px !important;
+  }
+
   .hero-layout {
     grid-template-columns: 1fr;
-    gap: 3rem;
-    padding-top: 120px;
+    gap: 2.5rem;
+    padding-top: 110px;
   }
   .hero-text {
     align-items: center;
@@ -1215,9 +1223,14 @@ body {
   }
   .hero-visual {
     width: 100%;
-    max-width: 540px;
-    margin: 20px auto 45px auto !important;
+    max-width: 680px;
+    margin: 25px auto 45px auto !important;
+    margin-left: auto !important;
     align-items: center;
+  }
+  .video-showcase-container {
+    width: 100%;
+    max-width: 100%;
   }
   /* [PREMIUM] Watermark: smaller on tablet/mobile */
   .hero-watermark {
@@ -1415,16 +1428,16 @@ body {
   background: #000;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1280px) {
   .hero-layout {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
   .hero-text { align-items: center; text-align: center; }
   .h1-main { white-space: normal; }
   .hero-body { max-width: 100%; text-align: left; }
   .hero-btns { justify-content: center; }
-  .hero-visual { width: 100%; max-width: 540px; margin: 30px auto 45px auto !important; align-items: center; }
+  .hero-visual { width: 100%; max-width: 680px; margin: 30px auto 45px auto !important; margin-left: auto !important; align-items: center; }
 }
 
 @media (max-width: 600px) {
