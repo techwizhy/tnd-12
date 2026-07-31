@@ -138,12 +138,9 @@ function initThemeToggle() {
     }
   };
 
-  // Load saved theme or default to system preference (or dark theme default)
+  // Load saved theme or default to dark theme
   const savedTheme = localStorage.getItem('theme');
   let isDark = savedTheme !== 'light'; // default dark
-  if (!isRegisterPage && !savedTheme) {
-    isDark = false; // default light for home
-  }
   
   applyTheme(isDark);
 
