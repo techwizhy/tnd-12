@@ -4009,6 +4009,20 @@ body {
   max-height: 84% !important;
 }
 
+/* Revert icon size for Winning Elections (card 2) and Data Analytics (card 4) back to original 1.6rem */
+.services-grid .stack-card:nth-child(2) .stack-card__icon-display,
+.services-grid .stack-card:nth-child(4) .stack-card__icon-display {
+  font-size: 1.6rem !important;
+}
+
+.services-grid .stack-card:nth-child(2) .stack-card__icon-display svg,
+.services-grid .stack-card:nth-child(4) .stack-card__icon-display svg {
+  width: 1em !important;
+  height: 1em !important;
+  max-width: 1em !important;
+  max-height: 1em !important;
+}
+
 .dark-theme .services-grid .stack-card__icon-display {
   background: rgba(var(--card-accent-rgb), 0.15) !important;
 }
