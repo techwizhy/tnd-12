@@ -3997,9 +3997,16 @@ body {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-size: 1.6rem !important;
+  font-size: 2.75rem !important;
   border: 1px solid rgba(var(--card-accent-rgb), 0.2) !important;
   transition: all 0.4s ease !important;
+}
+
+.services-grid .stack-card__icon-display svg {
+  width: 84% !important;
+  height: 84% !important;
+  max-width: 84% !important;
+  max-height: 84% !important;
 }
 
 .dark-theme .services-grid .stack-card__icon-display {
